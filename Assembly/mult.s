@@ -1,6 +1,5 @@
 ##############################################################################
 # File: mult.s
-# Skeleton for ECE 154a project
 ##############################################################################
 
 	.data
@@ -10,10 +9,8 @@ student:
 nl:	.asciiz "\n"
 	.globl nl
 
-
 op1:	.word 7				# change the multiplication operands
 op2:	.word 19			# for testing.
-
 
 	.text
 
@@ -52,12 +49,6 @@ ready:
 
 
 multiply:
-##############################################################################
-# Your code goes here.
-# Should have the same functionality as running
-#	multu	$a1, $a0
-#	mflo	$a2
-##############################################################################
 	# temp vars
 	addi $t7, $0, 1 # set a counter to 1
 	addi $t6, $0, 0 # set the sum to 0
@@ -81,14 +72,8 @@ check:
 end:
 	move $a2, $t6 # save to a2, end
 	
-
-##############################################################################
-# Do not edit below this line
-##############################################################################
 	jr	$ra
-
-
-
+	
 print_result:
 	move	$t0, $a0
 	li	$v0, 4
