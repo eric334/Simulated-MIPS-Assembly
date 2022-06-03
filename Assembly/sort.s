@@ -93,9 +93,6 @@ read_data:
 
 
 counting_sort:
-######################### 
-## your code goes here ##
-#########################
 
     # a0 - key pointer
     # a1 - output pointer
@@ -206,15 +203,8 @@ break4:
 	sll $t1, $t1, 2 # shift thing
 	add $sp, $sp, $t1 # reset stack pointer
 
-
-#########################
     jr $ra
-#########################
 
-
-##################################
-#Dont modify code below this line
-##################################
 ready:
     jal initial_values      # print operands to the console
     
